@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <title>Credit Card Fraud Detection</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html">Credit Card <span>  Fraud Detection</span></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa-solid fa-xmark"  onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">CONTACT</a></li>
+                    <li><a href="">CASE RAISE</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div  class="text-box">
+            <h1>Let's Stop The Fraud</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate repellendus quaerat distinctio ea, perspiciatis aliquid id vel numquam iure neque quo aut aperiam.
+            </p>
+            <a href="form.html">Predict</a>
+        </div>
+    </section>
+    <script>
+        var navlinks = document.getElementById('navlinks');
+        function showMenu()
+        {
+            navlinks.style.right = "0 ";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+        
+    </script>
+</body>
+</html>
